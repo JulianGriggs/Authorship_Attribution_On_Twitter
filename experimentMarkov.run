@@ -1,0 +1,11 @@
+Markov_Chain_Analysis_Experiment
+Markov Chain Char 2-gram,,Character NGrams|N:2,,Markov Chain Analysis,,./corpusFile
+Markov Chain Char 3-gram,,Character NGrams|N:3,,Markov Chain Analysis,,./corpusFile
+Markov Chain Word 2-gram,,Word NGrams|N:2,,Markov Chain Analysis,,./corpusFile
+Markov Chain Word 3-gram,,Word NGrams|N:3,,Markov Chain Analysis,,./corpusFile
+Markov Chain POS 2-gram,,POS NGrams|N:2,,Markov Chain Analysis,,./corpusFile
+Markov Chain POS 3-gram,,POS NGrams|N:3,,Markov Chain Analysis,,./corpusFile
+Markov Chain MW Function Words,,MW Function Words,,Markov Chain Analysis,,./corpusFile
+Markov Chain Sentence Length,,Sentence Length,,Markov Chain Analysis,,./corpusFile
+Markov Chain Word Lengths,,Word Lengths,,Markov Chain Analysis,,./corpusFile
+Markov Chain Words,,Words,,Markov Chain Analysis,,./corpusFile

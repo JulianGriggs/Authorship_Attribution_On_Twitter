@@ -1,0 +1,45 @@
+#!/bin/bash
+# Run experiment: AnalyzeDataScript
+
+catNum=0
+authNum=0
+trainNum=0
+testNum=0
+touch dataset.txt
+# For each of the categories
+for h in 0 1 2 3 4
+do
+    python GetCategories.py $h > currentCategory
+    dir=`cat currentCategory`
+    rm -f currentCategory
+    cd "$dir"
+
+    # For each number of potential authors
+    for i in 5 10 25 50
+    do
+        cd "${i}Authors"
+        
+        # For each number of tweets in training set per author
+        for j in 50 100 200 500
+        do
+            cd "${j}TweetsInTrainingSet"
+            
+            # For each number of tweets in test set per author
+            for k in 1 5 25 50 100
+            do
+                cd "${k}TweetsInTestSet"
+                
+                python CountCorrect.py $catNum $authNum $trainNum $testNum < find . -name '*.txt' >> ../../../../dataset.txt
+                
+                cd ..
+                testNum=`expr testNum + 1`
+            done
+            cd ..
+            trainNum=`expr $trainNum + 1`
+        done
+        cd ..
+        authNum=`expr $authNum + 1`
+    done
+    cd ..
+    catNum=`expr $catNum + 1`
+done

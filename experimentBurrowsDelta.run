@@ -1,0 +1,11 @@
+Burrows_Delta_Analysis
+Burrows Delta Char 2-gram,,Character NGrams|N:2,,Burrows Delta,,./corpusFile
+Burrows Delta Char 3-gram,,Character NGrams|N:3,,Burrows Delta,,./corpusFile
+Burrows Delta Word 2-gram,,Word NGrams|N:2,,Burrows Delta,,./corpusFile
+Burrows Delta Word 3-gram,,Word NGrams|N:3,,Burrows Delta,,./corpusFile
+Burrows Delta POS 2-gram,,POS NGrams|N:2,,Burrows Delta,,./corpusFile
+Burrows Delta POS 3-gram,,POS NGrams|N:3,,Burrows Delta,,./corpusFile
+Burrows Delta MW Function Words,,MW Function Words,,Burrows Delta,,./corpusFile
+Burrows Delta Sentence Length,,Sentence Length,,Burrows Delta,,./corpusFile
+Burrows Delta Word Lengths,,Word Lengths,,Burrows Delta,,./corpusFile
+Burrows Delta Words,,Words,,Burrows Delta,,./corpusFile

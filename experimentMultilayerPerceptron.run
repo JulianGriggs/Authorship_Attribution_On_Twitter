@@ -1,0 +1,11 @@
+Multilayer_Perceptron_Analysis
+Multilayer Perceptron Char 2-gram,,Character NGrams|N:2,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Char 3-gram,,Character NGrams|N:3,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Word 2-gram,,Word NGrams|N:2,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Word 3-gram,,Word NGrams|N:3,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron POS 2-gram,,POS NGrams|N:2,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron POS 3-gram,,POS NGrams|N:3,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron MW Function Words,,MW Function Words,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Sentence Length,,Sentence Length,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Word Lengths,,Word Lengths,,WEKA Multilayer Perceptron,,./corpusFile
+Multilayer Perceptron Words,,Words,,WEKA Multilayer Perceptron,,./corpusFile

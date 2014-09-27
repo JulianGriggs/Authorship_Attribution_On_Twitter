@@ -1,0 +1,11 @@
+Linear_SVM_Analysis
+Linear SVM Char 2-gram,,Character NGrams|N:2,,Linear SVM,,./corpusFile
+Linear SVM Char 3-gram,,Character NGrams|N:3,,Linear SVM,,./corpusFile
+Linear SVM Word 2-gram,,Word NGrams|N:2,,Linear SVM,,./corpusFile
+Linear SVM Word 3-gram,,Word NGrams|N:3,,Linear SVM,,./corpusFile
+Linear SVM POS 2-gram,,POS NGrams|N:2,,Linear SVM,,./corpusFile
+Linear SVM POS 3-gram,,POS NGrams|N:3,,Linear SVM,,./corpusFile
+Linear SVM MW Function Words,,MW Function Words,,Linear SVM,,./corpusFile
+Linear SVM Sentence Length,,Sentence Length,,Linear SVM,,./corpusFile
+Linear SVM Word Lengths,,Word Lengths,,Linear SVM,,./corpusFile
+Linear SVM Words,,Words,,Linear SVM,,./corpusFile

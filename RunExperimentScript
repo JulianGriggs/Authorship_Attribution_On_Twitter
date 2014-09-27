@@ -1,0 +1,68 @@
+#!/bin/bash
+# Run experiment: compress names.txt
+
+
+# For each of the categories
+for h in 0 1 2 3 4
+do
+    python GetCategories.py $h > currentCategory
+    dir=`cat currentCategory`
+    mkdir "$dir"
+    rm -f currentCategory
+    cd "$dir"
+
+    # For each number of potential authors
+    # for i in 5 10 25 50
+    for i in 50
+    do
+        mkdir "${i}Authors"
+        cd "${i}Authors"
+        
+        # For each number of tweets in training set per author
+        # for j in 50 100 200 500
+        for j in 500
+        do
+            mkdir "${j}TweetsInTrainingSet"
+            cd "${j}TweetsInTrainingSet"
+            
+            # For each number of tweets in test set per author
+            # for k in 1 5 25 50 100
+            for k in 100
+            do
+                mkdir "${k}TweetsInTestSet"
+                cd "${k}TweetsInTestSet"
+
+                # Number of trials
+                for l in 1 2 3 4 5
+                do
+                    mkdir Trial$l
+                    cd Trial$l
+
+                    count=`expr $i + 1`
+                    # Gets i random authors
+                    ls ~/Google\ Drive/Spring_JP/IW/"$dir"/ | cat | gshuf | head -$count > people1
+                    sed '/All_Users.txt/d' ./people1 > people2
+                    cat people2 | head -$i > people
+                    rm -f people1 people2
+                    java -cp ../../../../.. -jar ../../../../../GetTextFromJSONTweets.jar $j $k  ~/Google\ Drive/Spring_JP/IW/"$dir"/ < people
+                    echo "Trial ${l} with ${k} Tweets in Test Set and ${j} Tweets in Training Set and ${i} authors"
+                    # Build corpus file
+                    currentDir=$(pwd)
+                    echo *.txt | tr ' ' '\n' | python ../../../../../BuildCorpusFile.py $currentDir > corpusFile
+
+                    # actually run the test
+                    java -Xmx2048m -cp ../../../../.. -jar ../../../../../jgaap-6.0.0.jar -ee ../../../../../experimentMarkov.run
+                    
+                    cd ..
+
+                    # analyze the data
+                    # rm -f people
+                done
+                cd ..
+            done
+            cd ..
+        done
+        cd ..
+    done
+    cd ..
+done
