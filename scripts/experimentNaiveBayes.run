@@ -1,0 +1,11 @@
+Naive_Bayes_Analysis
+Naive Bayes Char 2-gram,,Character NGrams|N:2,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Char 3-gram,,Character NGrams|N:3,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Word 2-gram,,Word NGrams|N:2,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Word 3-gram,,Word NGrams|N:3,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes POS 2-gram,,POS NGrams|N:2,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes POS 3-gram,,POS NGrams|N:3,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes MW Function Words,,MW Function Words,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Sentence Length,,Sentence Length,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Word Lengths,,Word Lengths,,WEKA Naive Bayes Classifier,,./corpusFile
+Naive Bayes Words,,Words,,WEKA Naive Bayes Classifier,,./corpusFile
