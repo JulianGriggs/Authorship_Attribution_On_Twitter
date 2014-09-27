@@ -1,0 +1,110 @@
+% Use this template to write your solutions
+
+%\documentstyle[12pt]{article}
+
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+% Set the margins
+%
+\setlength{\textheight}{8.5in}
+\setlength{\headheight}{.25in}
+\setlength{\headsep}{.25in}
+\setlength{\topmargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+% Macros
+\newcommand{\myN}{\hbox{N\hspace*{-.9em}I\hspace*{.4em}}}
+\newcommand{\myZ}{\hbox{Z}^+}
+\newcommand{\myR}{\hbox{R}}
+
+\newcommand{\myfunction}[3]
+{${#1} : {#2} \rightarrow {#3}$ }
+
+\newcommand{\myzrfunction}[1]
+{\myfunction{#1}{{\myZ}}{{\myR}}}
+
+
+% Formating Macros
+
+\newcommand{\myheader}[4]
+{\vspace*{-0.5in}
+\noindent
+{#1} \hfill {#3}
+
+\noindent
+{#2} \hfill {#4}
+
+\noindent
+\rule[8pt]{\textwidth}{1pt}
+
+\vspace{1ex} 
+}  % end \myheader 
+
+\newcommand{\myalgsheader}[0]
+{\myheader
+{ {\bf{Julian Griggs}}}
+{ {\bf{Spring 2014}} }
+{ {\bf{Independent Work Checkpoint}} }
+%{ {\bf{Collaborator 2}} : last name, first name}
+}
+
+% Running head (goes at top of each page, beginning with page 2.
+% Must precede by \pagestyle{myheadings}.
+\newcommand{\myrunninghead}[2]
+{\markright{{\it {#1}, {#2}}}}
+
+\newcommand{\myrunningalgshead}[2]
+{\myrunninghead{COS 445 }{{#1}}}
+
+\newcommand{\myrunninghwhead}[2]
+{\myrunningalgshead{Solution to HW {#1}, Problem {#2}}}
+
+\newcommand{\mytitle}[1]
+{\begin{center}
+{\large {\bf {#1}}}
+\end{center}}
+
+\newcommand{\myhwtitle}[3]
+{\begin{center}
+{\large {\bf Solutions to TA1}}\\
+\medskip 
+{\it {#3}} % Name goes here
+\end{center}}
+
+\newcommand{\mysection}[1]
+{\noindent {\bf {#1}}}
+
+%%%%%% Begin document with header and title %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\myalgsheader
+
+\section*{Progress To Date}
+I have made good progress thus far on my independent work for this Spring 2014 semester including gathering all of my data(Hundreds of  Twitter Users and 1600 tweets per user) and writing about 9 pages of my final paper including my introduction, background, and related works sections.  \\
+\textbf{Excerpt from introduction:}\\
+One mechanism aimed at ebbing the flow of online crime is Computational Stylometry.  Stylometric analysis involves identifying and quantifying various linguistic features present in a written text so as to provide a computational profile of that body of writing.  The power behind this technique comes from the fact that writing styles are very often unique enough to distinguish one from another.  Therefore, computational stylometry makes the task of grouping anonymous texts together by author quite possible in many contexts.  Once a group of texts is shown to be linked stylistically, if the author of one such text in the group is known, then the anonymity of all other texts linked to it becomes jeopardized.....\\
+\textbf{Layout of My Paper:}\\
+{\small{
+\textbf{Introduction}\\
+\textbf{Background}\\
+\indent What is Stylometry\\
+\indent Feature Set\\
+\indent Lexical\\
+\indent Syntactic\\
+\indent Application-Specific\\
+\indent Analytic Models\\
+\textbf{Related Work}\\
+\textbf{Methodology}\\
+\indent Data Retrieval\\
+}}
+\section*{Plan Going Forward}
+This weekend I plan on completing the Methodology section of the paper.  After talking over it with my advisor to make sure that there are no gaping wholes in my method, I will be able to begin the actual experimentation aspect of my project.  I have already done thorough research to make sure that the open source JGAAP package will be able to be used to help with the actual authorship component piece.  My plan going forward is to: totally figure out methodology, format data(removing @-replies and URLs), then work on automating the authorship attribution experiments using the JGAAP package.
+\end{document}
+
